@@ -16,5 +16,7 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-  
+  .msg{
+    color: red;
+  }
 </style>

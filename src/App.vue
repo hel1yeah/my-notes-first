@@ -24,7 +24,7 @@ export default {
   data() {
     return {
       titlePage: "App Vue my",
-      msg: 'red',
+      msg: '',
       note:{
         title: '',
         description: '',
@@ -52,52 +52,21 @@ export default {
   methods: {
     addNote(){
       // description, test
-      const {title } = this.note;
+      const {title, description, test} = this.note;
       if (!title.trim().length) {
-        console.log('red');
+       return this.msg = 'Не заполненно поле тайтл'
       }
+      this.msg = '';
+      this.notes.push({
+        title, 
+        description, 
+        test,
+      });
+      this.note.title = "";
+      this.note.description = "";
+      this.note.test = "";
     },
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-  //   addNote(){
-  //     const {title, description, test} = this.note;
-  //     if (!title.trim().length) {
-  //       this.message = "Напишите пожалуйста заголовок заметки, без него нельзя создать заметку";
-  //       return false;
-  //     } else {
-  //       this.message = "";
-  //       this.notes.push({
-  //         title,
-  //         description,
-  //         test,
-  //       });
-  //     }
-  //     this.note.title = "";
-  //     this.note.description = "";
-  //     this.note.test = "";
-  //   },
-  // },
   },
 };
 </script>
