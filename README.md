@@ -1,4 +1,4 @@
-# my-ntes-first
+# my-notes-first
 
 ## Project setup
 ```
