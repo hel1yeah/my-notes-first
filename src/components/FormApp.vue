@@ -25,7 +25,6 @@ export default {
   },
   methods: {
     addNote(){
-
       this.$emit('addNote', this.note)
     }
   },

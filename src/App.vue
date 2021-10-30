@@ -71,7 +71,7 @@ export default {
 };
 </script>
 
-<style>
+<style lang="scss">
 #app {
   width: 100%;
   height: 96vh;
@@ -80,4 +80,5 @@ export default {
   background-size: initial;
   background-position: right bottom;
 }
+
 </style>

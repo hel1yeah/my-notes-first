@@ -19,6 +19,6 @@ export default {
 <style lang="scss">
   .title{
     font-size: 22px;
-    font-family: 'Roboro' sans-serif;
+    font-family: 'Roboto' sans-serif;
   }
 </style>
